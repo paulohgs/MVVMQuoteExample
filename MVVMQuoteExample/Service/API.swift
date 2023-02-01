@@ -16,7 +16,7 @@ struct API {
         } catch {
             print("Invalid request: \(error)")
         }
-
+        return Quote(anime: "", character: "", quote: "")
     }
 }
 
