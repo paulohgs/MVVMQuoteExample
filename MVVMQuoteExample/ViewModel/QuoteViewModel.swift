@@ -15,10 +15,12 @@ class QuoteViewModel {
         Task {
             do {
                 self.quote = try await API().fetch()
+                DispatchQueue.main.async {
+                    self.bind?(self.quote)
+                }
             } catch {
                 print("Invalid request: \(error)")
             }
         }
-        bind?(self.quote)
     }
 }
