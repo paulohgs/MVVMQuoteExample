@@ -54,14 +54,62 @@
 		B94E5224298AD62D005468F2 /* MVVMQuoteExample */ = {
 			isa = PBXGroup;
 			children = (
+				B94E523E298AD81B005468F2 /* Protocol */,
+				B94E523D298AD814005468F2 /* Service */,
+				B94E5239298AD7F5005468F2 /* Model */,
+				B94E523B298AD80A005468F2 /* View */,
+				B94E523C298AD80F005468F2 /* ViewModel */,
+				B94E523A298AD7FC005468F2 /* ViewController */,
 				B94E5225298AD62D005468F2 /* AppDelegate.swift */,
 				B94E5227298AD62D005468F2 /* SceneDelegate.swift */,
-				B94E5229298AD62D005468F2 /* ViewController.swift */,
 				B94E522E298AD62E005468F2 /* Assets.xcassets */,
 				B94E5230298AD62E005468F2 /* LaunchScreen.storyboard */,
 				B94E5233298AD62E005468F2 /* Info.plist */,
 			);
 			path = MVVMQuoteExample;
+			sourceTree = "<group>";
+		};
+		B94E5239298AD7F5005468F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B94E523A298AD7FC005468F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B94E5229298AD62D005468F2 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B94E523B298AD80A005468F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B94E523C298AD80F005468F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B94E523D298AD814005468F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B94E523E298AD81B005468F2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
