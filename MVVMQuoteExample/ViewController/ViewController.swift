@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    let quoteView = QuoteView()
+    let quoteViewModel = QuoteViewModel()
+
+    override func loadView() {
+        view = quoteView
     }
 
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        quoteView.didTapHandler = { [weak self] in
+            self?.quoteViewModel.getQuote()
+        }
+        quoteViewModel.bind = { [weak self] quoteModel in
+            self?.quoteView.configureView(model: quoteModel)
+        }
+    }
 }
 

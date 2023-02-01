@@ -16,6 +16,7 @@ class QuoteView: UIView {
         button.configuration = .bordered()
         button.setTitle("Get random quote", for: .normal)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
@@ -52,6 +53,7 @@ class QuoteView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        buildLayout()
     }
 
     required init?(coder: NSCoder) {
