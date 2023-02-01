@@ -23,6 +23,7 @@ class QuoteView: UIView {
     private var animeLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -30,13 +31,16 @@ class QuoteView: UIView {
     private var characterLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
     private var quoteLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18)
+        label.font = .italicSystemFont(ofSize: 18)
+        label.numberOfLines = 0
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
